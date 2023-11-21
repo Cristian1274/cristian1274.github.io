@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>ALMACENISTA</title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="imagenes/LOGO.jpg" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name"></span>
+                    <span class="profession">J5</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                    <li class="nav-link">
+                        <a id="mostrarMarca" href="#">  
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">PRODUCTO</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i onclick="confirmarCerrarSesion()" class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Cerrar Sesión</span>
+                    </a>
+                </li>
+
+                
+                
+            </div>
+        </div>
+    </nav>
+    <section class="home">
+        <div class="text">ALMACENISTA</div>
+        <div id="consultaResult"></div>
+        
+    </section>
+
+    <script src="script.js"></script>
+
+
+
+ <!-- MARCA -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var btnMostrarMarca = document.getElementById('mostrarMarca');
+            var consultaResult = document.getElementById('consultaResult');
+          
+            btnMostrarMarca.addEventListener('click', function() {
+              // Realizar la consulta de inventario
+              var xhr = new XMLHttpRequest();
+              xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                  consultaResult.innerHTML = xhr.responseText;
+                }
+              };
+              xhr.open('GET', 'consulta_producto.php', true);
+              xhr.send();
+            });
+          });
+          
+    </script>
+
+    
+    <script>
+        function confirmarCerrarSesion() {
+          if (confirm("¿Está seguro de que desea cerrar sesión?")) {
+            window.location.href = "cerrar_sesion.php";
+          }
+        }
+      </script>
+</body>
+</html>

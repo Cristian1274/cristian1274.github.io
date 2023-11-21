@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carrito de compras</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">Mi tienda en línea</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="Cliente.html">Productos</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Carrito de compras</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div class="container">
+			<h1 class="my-4">Carrito de compras</h1>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Producto</th>
+						<th>Precio</th>
+						<th>Cantidad</th>
+						<th>Subtotal</th>
+							<th>Eliminar</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Producto 1</td>
+						<td>$20.00</td>
+						<td>2</td>
+						<td>$40.00</td>
+						<td><a href="#" class="btn btn-danger">Eliminar</a></td>
+					</tr>
+					<tr>
+						<td>Producto 2</td>
+						<td>$30.00</td>
+						<td>1</td>
+						<td>$30.00</td>
+						<td><a href="#" class="btn btn-danger">Eliminar</a></td>
+					</tr>
+					<tr>
+						<td>Producto 3</td>
+						<td>$10.00</td>
+						<td>3</td>
+						<td>$30.00</td>
+						<td><a href="#" class="btn btn-danger">Eliminar</a></td>
+					</tr>
+					<tr>
+						<td colspan="3" class="text-right">Total</td>
+						<td>$100.00</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="text-center">
+				<a href="#" class="btn btn-primary">Realizar pago</a>
+			</div>
+		</div>
+	</main>
+
+	<footer class="bg-light py-3">
+		<div class="container text-center">
+			<p>Todos los derechos reservados</p>
+		</div>
+	</footer>
+
+    <<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+  </html>

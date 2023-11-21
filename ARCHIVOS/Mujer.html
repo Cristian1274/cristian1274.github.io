@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="estilo.css">
+	
+	<title>Carrusel de calzado</title>
+
+
+	
+</head>
+<body>
+		<img src="imagenes/LOGO.jpg" class="imagen" alt="" > <h1 >JOAN 5</h1>
+	
+	
+	
+<div class="container3">
+	<div class="CARRI">
+		<a href="carrito.html" ><img src="imagenes/carrito.jpg" height ="100" width="100" /></a>
+	</div>
+
+    <div id="selectedShoeContainer" class="selected-shoe">
+        <div id="selectedShoeImageContainer"></div>
+        
+      </div>
+      
+    
+	<div class="container4">
+		
+		<div id="selectedShoeDetailsContainer"></div>
+
+    <div class="valoracion">
+      <h3>Calificaciones</h3>
+      <input id="radio1" type="radio" name="estrellas" value="5" >
+      <label for="radio1">★</label>
+      <input id="radio2" type="radio" name="estrellas" value="4" >
+      <label for="radio2">★</label>
+      <input id="radio3" type="radio" name="estrellas" value="3" >
+      <label for="radio3">★</label>
+      <input id="radio4" type="radio" name="estrellas" value="2" >
+      <label for="radio4">★</label>
+      <input id="radio5" type="radio" name="estrellas" value="1" >
+      <label for="radio5">★</label>
+    </div>
+	
+	 </div>
+	
+</div>
+	
+	
+
+	
+
+	<div class="container1">
+		<form action="../../form-result.php" method="post" target="_blank">
+
+			
+		  
+			<input type="search" name="busquedacodigo" size="25" maxlength="7" placeholder="BUSCAR">
+		  
+			  <input type="submit" value="Buscar">
+		  
+			
+		  
+		  </form>
+	
+	<div class="container2">
+		<h2>MUJER</h2>
+	</div>		
+</div>  
+	
+	<div class="container5">
+		<div class="shoe-item" onclick="showShoeDetails('Zapato 1', 50, 'imagenes/TenisM1.jpg', 'Este es el Zapato 1')">
+            <img class="shoe-image" src="imagenes/TenisM1.jpg" alt="Zapato 1">
+            <div>
+              <strong>Nombre:</strong> Zapato 1
+              <br>
+              <span class="price">$50</span>
+              <div class="button-container">
+                <button class="button">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="shoe-item" onclick="showShoeDetails('Zapato 2', 65, 'imagenes/mujer.jpg', 'Este es el Zapato 2')">
+            <img class="shoe-image" src="imagenes/mujer.jpg" alt="Zapato 2">
+            <div>
+              <strong>Nombre:</strong> Zapato 2
+              <br>
+              <span class="price">$65</span>
+              <div class="button-container">
+                <button class="button">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="shoe-item" onclick="showShoeDetails('Zapato 3', 80, 'imagenes/TenisM2.jpg', 'Este es el Zapato 3')">
+            <img class="shoe-image" src="imagenes/TenisM2.jpg" alt="Zapato 3">
+            <div>
+              <strong>Nombre:</strong> Zapato 3
+              <br>
+              <span class="price">$80</span>
+              <div class="button-container">
+                <button class="button">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="shoe-item" onclick="showShoeDetails('Zapato 3', 80, 'imagenes/TenisM3.jpg', 'Este es el Zapato 3')">
+            <img class="shoe-image" src="imagenes/TenisM3.jpg" alt="Zapato 3">
+            <div>
+              <strong>Nombre:</strong> Zapato 3
+              <br>
+              <span class="price">$80</span>
+              <div class="button-container">
+                <button class="button">Comprar</button>
+              </div>
+            </div>
+          </div>
+
+          
+	
+	</div>
+  
+    <script>
+
+      var selectedRating = 0;
+
+        function showShoeDetails(nombre, precio, imagen, descripcion) {
+            var selectedShoeImageContainer = document.getElementById("selectedShoeImageContainer");
+            var selectedShoeDetailsContainer = document.getElementById("selectedShoeDetailsContainer");
+        
+            selectedShoeImageContainer.innerHTML = `
+              <img class="selected-shoe-image" src="${imagen}" alt="${nombre}">
+            `;
+        
+            selectedShoeDetailsContainer.innerHTML = `
+              <strong>Nombre:</strong> ${nombre}
+              <br>
+              <strong>Precio:</strong> $${precio}
+              <br>
+              <strong>Descripción:</strong> ${descripcion}
+            `;
+        }
+           
+      </script>
+    
+    </body>
+    </html>

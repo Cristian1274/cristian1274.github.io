@@ -1,0 +1,230 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+   background-color: rgb(174, 174, 174);
+}
+img{
+    width: 400px;
+    height: 400px;
+}
+.FON{
+    position: absolute;
+    left: 55%;
+    top: 0%;
+   width: 45%;
+   height: 100%;
+   opacity: 0.3;
+    
+    
+}
+.container1{
+    position: absolute;
+    width: 54.5%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    align-content: center;
+    
+    
+}
+
+.PRODUC{
+    position: absolute;
+    width: 650px;
+    height: 100px;
+    background-color: gray;
+    display: grid;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.TALL{
+    position: absolute;
+    top: 55%;
+    width: 50%;
+    height: 50%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    
+}
+.IMAG{
+    padding-top: 120px;
+    display: grid;
+    justify-content: center;
+    
+}
+.container2{
+    position: absolute;
+    width: 45%;
+    height: 30%;
+    top: 10%;
+    left: 55%;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    
+}
+h2{
+    font-size: 28px;
+}
+p{
+    font-size: 18px;
+}
+.buton{
+    padding: 15px 20px;
+    margin: 20px;
+    border: none;
+    background-color: rgb(139, 140, 141);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    position: relative;
+    align-items: center;
+    top: 90px;
+    left: 80px;
+   
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/*:::::Pie de Pagina*/
+.box{
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.pie-pagina{
+    width: 100%;
+    background-color: rgba(80, 80, 80);
+    top: 100%;
+    position: absolute;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 0.2px 0px;
+    align-items: center;
+    
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    align-items: center;
+    
+    margin-bottom: 10px;
+}.r{
+    width: 300px;
+   
+    align-items: center;
+    
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    border-radius:60px; 
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #000000;
+    margin-right: 10px;
+    background-color: rgba(80, 80, 80);
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: rgba(80, 80, 80);
+    padding: 0.2px 0px;
+    text-align: center;
+    
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+.gray-button {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    left: 80%;
+    top: 10px;
+    position: absolute;
+  }
+  
+  .gray-button:hover {
+    background-color: darkgray;
+  }
+  .car-button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 10px;
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    left: 97%;
+    top: -20%;
+    position: absolute;
+  }
+  
+ .car-button:hover {
+    background-color: #999999;
+  }
+
+  a.ag {
+    display: inline-block;
+    padding: 10px 20px 10px 10px;
+    background-color: #484848;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    top: 500px;
+    left: 300px;
+    width: 200px;
+    height: 25px;
+    position: absolute;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  a.ag:hover {
+    background-color: #757575;
+  }

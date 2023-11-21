@@ -1,0 +1,102 @@
+body{
+    
+  background-image: url(imagenes/FONDOREGISTRO.png);
+  background-size: 65%;
+   
+}
+html{
+	height: 100%;
+	width:150%;
+	font-size: 16px;
+	position: relative;  
+}
+.Login{
+	width: 300px;
+	border: 1px solid #E1E1E1;
+	border-radius: 4px;
+	padding: 15px;
+	position: absolute;
+	top: 80%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+}
+@media (max-width: 400px){
+	.Login{
+		width: 90%;
+	}
+}
+
+ 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  max-width: 200px;
+    margin: auto;
+    padding:  40px;
+  }
+
+  .form-register{
+width: 400px;
+background:#A9A9A9;
+padding: 30px;
+margin:auto;
+margin-top: 100px;
+  }
+
+  .contenedor{
+    background-color: aqua;
+    padding: 35px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  label {
+    display: auto;
+    margin-bottom: 20px
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="password2"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: px;
+    border: none;
+    background-color: #bababa
+    ;
+  }
+  
+  button[type="submit"] {
+    background-color: #494c4c;
+    color: #bababa;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 10px;
+    font-size: 25px;
+    cursor: pointer;
+    
+  }
+  button[type="submit"]:hover {
+    background-color: #bababa;
+    .btn-iniciar{
+      text-decoration: none;
+      padding: 15px 45px;
+      font-size: 1rem;
+      font-size: relative;
+      margin: 32px;
+  
+  }
+}
+.secundario-formulario{
+  
+  position: absolute;
+  left: 600px;
+  top: 300px;
+  
+}
